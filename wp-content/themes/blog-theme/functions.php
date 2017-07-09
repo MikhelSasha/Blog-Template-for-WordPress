@@ -13,3 +13,16 @@ function load_style_script() {
 * Upload scripts and styles
 */
 add_action('wp_enqueue_scripts', 'load_style_script');
+
+/**
+* Add widgets
+*/
+function register_my_widgets(){
+	register_sidebar( array(
+		'name' => "Меню",
+		'id' => 'menu_header',
+		'before_widget' => '',
+		'after_widget' => ''
+	) );
+}
+add_action( 'widgets_init', 'register_my_widgets' );
