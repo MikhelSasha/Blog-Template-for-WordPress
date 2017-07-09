@@ -2,22 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />  
-<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
-<script src="js/jqFancyTransitions.1.8.min.js" type="text/javascript"></script>
-<script>
-	$(document).ready( function(){
-		$('#slideshowHolder').jqFancyTransitions({ navigation: true, width: 594, height: 279 });
-	});
-	</script>
 <title>Тема WordPress для блога</title>
+<?php wp_head(); ?>
 </head>
 
 <body>
 <div class="head-wrapper">
 	<div class="head">
-    	<div class="head-logo"><img src="images/logo.jpg" alt="" /></div>
-        <div class="head-banner"><img src="images/728x90.jpg" alt="" /></div>
+    	<div class="head-logo"><img src="<?php bloginfo('template_url'); ?>/images/logo.jpg" alt="" /></div>
+        <div class="head-banner"><img src="<?php bloginfo('template_url'); ?>/images/728x90.jpg" alt="" /></div>
     </div>
 </div>
 <div class="menu-wrapper">
@@ -31,10 +24,10 @@
             <li><a href="#">Contact Me</a></li>
         </ul>
         <ul class="ico-social">
-        	<li><a href="#"><img src="images/ico-vk.png" alt="мы вконтакте" /></a></li>
-            <li><a href="#"><img src="images/ico-youtobe.png" alt="канал youtobe" /></a></li>
-            <li><a href="#"><img src="images/ico-facebook.png" alt="мы на facebook" /></a></li>
-            <li><a href="#"><img src="images/ico-twitter.png" alt="наш twitter" /></a></li>
+        	<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/ico-vk.png" alt="мы вконтакте" /></a></li>
+            <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/ico-youtobe.png" alt="канал youtobe" /></a></li>
+            <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/ico-facebook.png" alt="мы на facebook" /></a></li>
+            <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/ico-twitter.png" alt="наш twitter" /></a></li>
         </ul>    
     </div>
 </div>
@@ -45,22 +38,22 @@
         
             <div id='slideshowHolder'>
     
-             <img src="images/img1.jpg" alt='' />
+             <img src="<?php bloginfo('template_url'); ?>/images/img1.jpg" alt='' />
             
-             <img src="images/img1.jpg" alt='' />
+             <img src="<?php bloginfo('template_url'); ?>/images/img1.jpg" alt='' />
             
-             <img src="images/img1.jpg" alt='' />
+             <img src="<?php bloginfo('template_url'); ?>/images/img1.jpg" alt='' />
             
             </div>
      
         	<div class="articles">
             	
                 <div class="articles-gen-img">
-                	<a href="#"><img src="images/post-img1.jpg" alt="Preview image" /></a>
+                	<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post-img1.jpg" alt="Preview image" /></a>
             	</div>
                 <div class="articles-head">
-            		<span class="articles-date"><img src="images/articles-autor.jpg" alt="admin" /> <span>Admin</span> - Nov 28th, 2010</span>
-                    <span class="articles-comments"><img src="images/articles-comment.jpg" alt="commets" /> <a href="#">10 комментариев</a></span>           
+            		<span class="articles-date"><img src="<?php bloginfo('template_url'); ?>/images/articles-autor.jpg" alt="admin" /> <span>Admin</span> - Nov 28th, 2010</span>
+                    <span class="articles-comments"><img src="<?php bloginfo('template_url'); ?>/images/articles-comment.jpg" alt="commets" /> <a href="#">10 комментариев</a></span>           
             	</div>
                 
                 <h1><a href="#">Thanksgiving greeting card PSD</a></h1>
@@ -73,11 +66,11 @@
             <div class="articles">
             	
                 <div class="articles-gen-img">
-                	<a href="#"><img src="images/post-img2.jpg" alt="Preview image" /></a>
+                	<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post-img2.jpg" alt="Preview image" /></a>
             	</div>
                 <div class="articles-head">
-            		<span class="articles-date"><img src="images/articles-autor.jpg" alt="admin" /> <span>Admin</span> - Nov 28th, 2010</span>
-                    <span class="articles-comments"><img src="images/articles-comment.jpg" alt="commets" /> <a href="#">10 комментариев</a></span>           
+            		<span class="articles-date"><img src="<?php bloginfo('template_url'); ?>/images/articles-autor.jpg" alt="admin" /> <span>Admin</span> - Nov 28th, 2010</span>
+                    <span class="articles-comments"><img src="<?php bloginfo('template_url'); ?>/images/articles-comment.jpg" alt="commets" /> <a href="#">10 комментариев</a></span>           
             	</div>
                 
                 <h1><a href="#">Thanksgiving greeting card PSD</a></h1>
@@ -90,11 +83,11 @@
             <div class="articles">
             	
                 <div class="articles-gen-img">
-                	<a href="#"><img src="images/post-img3.jpg" alt="Preview image" /></a>
+                	<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post-img3.jpg" alt="Preview image" /></a>
             	</div>
                 <div class="articles-head">
-            		<span class="articles-date"><img src="images/articles-autor.jpg" alt="admin" /> <span>Admin</span> - Nov 28th, 2010</span>
-                    <span class="articles-comments"><img src="images/articles-comment.jpg" alt="commets" /> <a href="#">10 комментариев</a></span>           
+            		<span class="articles-date"><img src="<?php bloginfo('template_url'); ?>/images/articles-autor.jpg" alt="admin" /> <span>Admin</span> - Nov 28th, 2010</span>
+                    <span class="articles-comments"><img src="<?php bloginfo('template_url'); ?>/images/articles-comment.jpg" alt="commets" /> <a href="#">10 комментариев</a></span>           
             	</div>
                 
                 <h1><a href="#">Thanksgiving greeting card PSD</a></h1>
@@ -107,11 +100,11 @@
             <div class="articles">
             	
                 <div class="articles-gen-img">
-                	<a href="#"><img src="images/post-img4.jpg" alt="Preview image" /></a>
+                	<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post-img4.jpg" alt="Preview image" /></a>
             	</div>
                 <div class="articles-head">
-            		<span class="articles-date"><img src="images/articles-autor.jpg" alt="admin" /> <span>Admin</span> - Nov 28th, 2010</span>
-                    <span class="articles-comments"><img src="images/articles-comment.jpg" alt="commets" /> <a href="#">10 комментариев</a></span>           
+            		<span class="articles-date"><img src="<?php bloginfo('template_url'); ?>/images/articles-autor.jpg" alt="admin" /> <span>Admin</span> - Nov 28th, 2010</span>
+                    <span class="articles-comments"><img src="<?php bloginfo('template_url'); ?>/images/articles-comment.jpg" alt="commets" /> <a href="#">10 комментариев</a></span>           
             	</div>
                 
                 <h1><a href="#">Thanksgiving greeting card PSD</a></h1>
@@ -140,7 +133,7 @@
                     <form action="" id="search-form" method="get">
                              
                         <input class="search-txt" type="text" value="Поиск" onBlur="if(this.value=='')this.value='Поиск'" onFocus="if(this.value=='Поиск')this.value=''" />
-                        <input type="image" src="images/search-btn.jpg" />
+                        <input type="image" src="<?php bloginfo('template_url'); ?>/images/search-btn.jpg" />
                              
                     </form>
                 </div>               
@@ -148,10 +141,10 @@
             
             <div class="sidebar-widget">
             	<ul class="ads-main">
-                	<li><a href="#"><img src="images/ads1.jpg" alt="" /></a></li>
-                    <li><a href="#"><img src="images/ads2.jpg" alt="" /></a></li>
-                    <li><a href="#"><img src="images/ads3.jpg" alt="" /></a></li>
-                    <li><a href="#"><img src="images/ads4.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/ads1.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/ads2.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/ads3.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/ads4.jpg" alt="" /></a></li>
                 </ul>    
             </div>
             
@@ -188,27 +181,27 @@
             <div class="sidebar-widget">
             	<h3>Последние записи</h3>
                 <p class="latest-post">
-                	<img src="images/latest-past1.jpg" alt="" />
+                	<img src="<?php bloginfo('template_url'); ?>/images/latest-past1.jpg" alt="" />
                     <a href="#">Thanksgiving greeting card PSD</a>
                 </p>
                 <p class="latest-post">
-                	<img src="images/latest-past1.jpg" alt="" />
+                	<img src="<?php bloginfo('template_url'); ?>/images/latest-past1.jpg" alt="" />
                     <a href="#">Thanksgiving greeting card PSD</a>
                 </p>
                 <p class="latest-post">
-                	<img src="images/latest-past1.jpg" alt="" />
+                	<img src="<?php bloginfo('template_url'); ?>/images/latest-past1.jpg" alt="" />
                     <a href="#">Thanksgiving greeting card PSD</a>
                 </p>
                 <p class="latest-post">
-                	<img src="images/latest-past1.jpg" alt="" />
+                	<img src="<?php bloginfo('template_url'); ?>/images/latest-past1.jpg" alt="" />
                     <a href="#">Thanksgiving greeting card PSD</a>
                 </p>
                 <p class="latest-post">
-                	<img src="images/latest-past1.jpg" alt="" />
+                	<img src="<?php bloginfo('template_url'); ?>/images/latest-past1.jpg" alt="" />
                     <a href="#">Thanksgiving greeting card PSD</a>
                 </p>
                 <p class="latest-post">
-                	<img src="images/latest-past1.jpg" alt="" />
+                	<img src="<?php bloginfo('template_url'); ?>/images/latest-past1.jpg" alt="" />
                     <a href="#">Thanksgiving greeting card PSD</a>
                 </p>
                 
@@ -216,7 +209,7 @@
             
             <div class="sidebar-widget">
             	<div class="facebook">
-                	<img src="images/facebook.jpg" alt="" />
+                	<img src="<?php bloginfo('template_url'); ?>/images/facebook.jpg" alt="" />
                 </div>
             </div>   
             
@@ -249,8 +242,14 @@
     </div>
 </div>
 <div class="footer-copy">
-	<p class="copy">Copyright © 2010 All Rights Reserved</p>
+	<p class="copy">Copyright © 2017 All Rights Reserved</p>
     <p class="by-st">Designed by <a href="#">GraphicsFuel.com</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Powered by <a href="#">Wordpress</a></p>    
 </div>
+<script>
+    $(document).ready( function(){
+        $('#slideshowHolder').jqFancyTransitions({ navigation: true, width: 594, height: 279 });
+    });
+</script>
+<?php wp_footer(); ?>
 </body>
 </html>
