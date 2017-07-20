@@ -15,6 +15,12 @@ function load_style_script() {
 add_action('wp_enqueue_scripts', 'load_style_script');
 
 /**
+* Thumbnail support
+*/
+add_theme_support('post-thumbnails');
+set_post_thumbnail_size(180, 180);
+
+/**
 * Add widgets
 */
 function register_my_widgets(){
@@ -23,6 +29,14 @@ function register_my_widgets(){
 		'id' => 'menu_header',
 		'before_widget' => '',
 		'after_widget' => ''
+	) );
+	register_sidebar( array(
+		'name' => "Sidebar",
+		'id' => 'sidebar',
+		'before_widget' => '<div class="sidebar-widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
 	) );
 }
 add_action( 'widgets_init', 'register_my_widgets' );

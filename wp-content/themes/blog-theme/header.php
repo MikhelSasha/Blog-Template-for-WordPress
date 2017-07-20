@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php bloginfo('name'); ?></title>
+<title><?php bloginfo('name'); wp_title(); ?></title>
 <?php wp_head(); ?>
 </head>
 
 <body>
 <div class="head-wrapper">
 	<div class="head">
-    	<div class="head-logo"><img src="<?php bloginfo('template_url'); ?>/images/logo.jpg" alt="" /></div>
+    	<div class="head-logo"><a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.jpg" alt="" /></a></div>
         <div class="head-banner"><img src="<?php bloginfo('template_url'); ?>/images/728x90.jpg" alt="" /></div>
     </div>
 </div>
