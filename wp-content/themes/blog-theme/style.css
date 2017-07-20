@@ -194,7 +194,7 @@ a:hover{
 			font-size:13px; line-height:2; color:#373737; margin:0 0 15px 0;
 		}
 		.footer-info ul li a{
-			line-height:2; font-size:13px; color:#; color:#373737;
+			line-height:1; font-size:13px; color:#373737; padding: 7px 0;
 		}
 		.footer-info p a{
 			color:#eb4900;
@@ -233,4 +233,7 @@ a:hover{
 }
 .sidebar-widget li {
 	margin-bottom: 10px;
+}
+.footer-info li {
+	float: none;
 }
